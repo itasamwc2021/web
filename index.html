@@ -28,13 +28,13 @@
     <div class="nav2">
       <nav>
         <ul>
-            <li><a href="#"><b><u>About</u></b></a></li>
-          <li><a href="#">Location</a></li>
-            <li><a href="#">Keynote</a></li>
-          <li><a href="#">Workshops</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Sponsors</a></li>
+            <li><a href="#about">About</a></li>
+          <li><a href="#location">Location</a></li>
+            <li><a href="#keynote">Keynote</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
         </ul>
         </nav></div>
           
@@ -51,7 +51,9 @@
         
         
         <div class="backgroundimg"></div> 
+
         <div class="content-div"><h1>our theme.</h1></div>
+        <a name="about" id="about"></a>
         <div class="content">
         
             
@@ -79,9 +81,15 @@ In combining programming with a sense of greater community at the 2021 Midwest C
 
             </p><br>
         
-           
+           <a name="location" id="location"></a>
         </div>
-        <div class="location"><img src="images/annarbor.jpg" class="image3"> <h2>Location.</h2><p> Ann Arbor is a city west of Detroit, in the Midwestern state of Michigan. It’s home to the sprawling University of Michigan, known for its research programs. The University of Michigan Museum of Art displays works from around the globe and spanning centuries. Science-focused attractions in the city include the Museum of Natural History and the Ann Arbor Hands-On Museum, with kid-friendly interactive exhibits. </p> <br> <br>
+        
+        <div class="location">
+            
+            
+            <img src="images/annarbor.jpg" class="image3"> <h2>Location.</h2><p> Ann Arbor is a city west of Detroit, in the Midwestern state of Michigan. It’s home to the sprawling University of Michigan, known for its research programs. The University of Michigan Museum of Art displays works from around the globe and spanning centuries. Science-focused attractions in the city include the Museum of Natural History and the Ann Arbor Hands-On Museum, with kid-friendly interactive exhibits. </p> <br> <br>
+            
+            <a name="keynote" id='keynote'></a>
         </div>
         
         
@@ -103,7 +111,7 @@ from Harvard in 2011, Wu decided to quit his corporate job and
 pursue music full time. Since releasing his first EP in 2013 and
 second EP in 2018, Wu has received millions of online streams and
 appeared in major music festivals, distinguishing himself as one of
-             the most innovative EDM producers around today. </p></div> <hr><br> <br>
+             the most innovative EDM producers around today. </p></div><br> <hr><br> <br>
           <img src="images/stevechen.jpg" class="image2">
           <div id="classtext">
          <h2>Steve Chen</h2><p> Steve Chen is a Taiwanese American entrepreneur known for co-
@@ -134,6 +142,7 @@ America in 2011 to help cities recover from the Great Recession. He
 was previously selected by the Obama administration as a
 “Champion of Change” and “Presidential Ambassador for Global
                Entrepreneurship.”</p></div> <br> <br>
+          <a name="workshops" id="workshops"></a>
         </div>
           
           
@@ -142,6 +151,15 @@ was previously selected by the Obama administration as a
            <div id="workshopclass"> <h2>filler ~ will work on later ~</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue risus, faucibus ullamcorper nunc sit amet, interdum faucibus sem. Nunc at luctus metus. Sed aliquet, turpis vel semper accumsan, neque purus venenatis magna, at dignissim nisl libero vel risus. </p></div><br> <br>
               
                  <img src="images/banner1.png" class="image2">
+           <div id="workshopclass"> <h2>filler ~ will work on later ~</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue risus, faucibus ullamcorper nunc sit amet, interdum faucibus sem. Nunc at luctus metus. Sed aliquet, turpis vel semper accumsan, neque purus venenatis magna, at dignissim nisl libero vel risus. </p></div>
+              
+              <br> <br>
+               <img src="images/banner1.png" class="image2">
+           <div id="workshopclass"> <h2>filler ~ will work on later ~</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue risus, faucibus ullamcorper nunc sit amet, interdum faucibus sem. Nunc at luctus metus. Sed aliquet, turpis vel semper accumsan, neque purus venenatis magna, at dignissim nisl libero vel risus. </p></div>
+              <br> <br>
+               <img src="images/banner1.png" class="image2">
+           <div id="workshopclass"> <h2>filler ~ will work on later ~</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue risus, faucibus ullamcorper nunc sit amet, interdum faucibus sem. Nunc at luctus metus. Sed aliquet, turpis vel semper accumsan, neque purus venenatis magna, at dignissim nisl libero vel risus. </p></div> <br> <br>
+               <img src="images/banner1.png" class="image2">
            <div id="workshopclass"> <h2>filler ~ will work on later ~</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue risus, faucibus ullamcorper nunc sit amet, interdum faucibus sem. Nunc at luctus metus. Sed aliquet, turpis vel semper accumsan, neque purus venenatis magna, at dignissim nisl libero vel risus. </p></div>
               
              <br> <br> <br> <Br>
@@ -160,14 +178,15 @@ was previously selected by the Obama administration as a
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript">
+$(function() {
+  $('section').mouseenter(function() {
+    $('nav a[href="#'+$(this).attr('id')+'"]').addClass('active').siblings('nav a').removeClass('active');
+  });
 
-$(document).ready(function()
-{
-    $('ol#foo li').click(function() {
-        $('ol#foo li').removeClass('current');             
-        $(this).addClass('current')
-    });
-});
+  $('nav a').click(function() {
+    $(this).addClass('active').siblings('nav a').removeClass('active');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top + 'px' }, 800, 'linear');    
+  });
 
  </script>
   </body>
