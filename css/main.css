@@ -221,8 +221,8 @@ header p{
 .backgroundimg{
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 2/span 2;
-    background-attachment: fixed; 
+    grid-row: 1/span 3;
+    
    background-image: url("../images/coverbanner6.jpg");   
     color: black;
     border-bottom: 4px solid #aaaaaa;  
@@ -261,6 +261,26 @@ header p{
     text-align: center;
     height: 120px; 
     margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+    
+}
+
+.content-div2 h1 {
+     font-size: 30px;
+    font-family: 'Roboto-light', sans-serif;
+    margin-bottom: 10px;
+    border-bottom: 2px #FFFFFF solid;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 120px; 
+    margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
     
     
 }
@@ -293,20 +313,7 @@ header p{
     
 }
 
-.content-div2 h1 {
-     font-size: 30px;
-    font-family: 'Roboto-light', sans-serif;
-    margin-bottom: 10px;
-    border-bottom: 2px #FFFFFF solid;
-    color: #FFFFFF;
-    line-height: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    height: 120px; 
-    margin-left: 20px;
-    
-}
+
 .content-div2{
     grid-column: 1/span 1;
     align-items: center;
@@ -362,18 +369,33 @@ header p{
 
 #classtext2 {
     height: auto;
-    padding-bottom: 15%;
+    padding-bottom: 8%;
 }
+
 
 
 #workshopclass {
     height: auto;
     padding-bottom: 2%;
-    background: #BFCEBD;
-    margin: 10px;
+    background: #eeeeee;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    
+}
+
+#workshopclass2 {
+    height: 220px;
+    padding-bottom: 2%;
+    background: #eeeeee;
+    margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+    
+    
+    /*/box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);/*/
     
 }
 
@@ -406,6 +428,7 @@ header p{
     color: #2f2f2f;
     text-shadow: 1px 1px #aaaaaa;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .keynote h2{
@@ -413,7 +436,6 @@ header p{
     font-family: 'Roboto', sans-serif;
     color: #000000;
     width: auto;
-    
     
     border-radius: 20px;
     
@@ -425,7 +447,7 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 15/span 1;
-    background-color: #5e5f5e;
+    background-color: #D0D6D0;
     color: black;
     margin-top: 20px; 
     padding-top: 20px; 
@@ -440,25 +462,26 @@ header p{
 .workshop h1{
   font-size: 40px;
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    color: #2f2f2f;
     text-shadow: 1px 1px #aaaaaa;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .workshop h2{
   font-size: 27px;
     font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
+    color: #000000;
     width: auto;
    
     letter-spacing: 2px;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 
 .workshop p{
-    color: #ffffff;
+    color: #000000;
     line-height: 20px;
     font-size: 14px;
     font-family: 'Lora', serif;
@@ -467,7 +490,7 @@ header p{
 .team {
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 15/span 1;
+    grid-row: 16/span 1;
     background-color: #eeeeee;
     color: black;
     margin-top: 20px; 
@@ -475,11 +498,65 @@ header p{
     padding-right: 15%;
     padding-left: 15%;
     text-align: left;
+    padding-bottom: 100%
     
     
     
 }
 
+
+#team1 {
+    height: 255px;
+    width: 480px;
+    padding-right: 50px;
+    padding: 20px;
+    float: left;
+    background: #FAFAFA;
+    border-radius: 10px;
+    margin: 10px;
+    
+    
+}
+.team h1{
+  font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #2f2f2f;
+    text-shadow: 1px 1px #aaaaaa;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.team h2{
+  font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #5D5E5D;
+    width: auto;
+    background: #D0D6D0;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    padding: 0px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.team h3{
+  font-size: 18px;
+    font-family: 'Lora', serif;
+    color: #5D5E5D;
+    width: auto;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+
+.team p{
+    color: black;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: 'Lora', serif;
+}
 
 
 .content p{
@@ -585,11 +662,33 @@ input[type=submit]:hover {
 }
 
 
+
+.workshopimage {
+  opacity: 1;
+  display: block;
+  width: 200px;
+    height: 200px;
+  /*height: auto;*/
+    object-fit: cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    float: left;
+    border-radius: 5px;
+    margin-right: 35px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+   
+    
+}
+
+
 .image2 {
   opacity: 1;
   display: block;
   width: 300px;
-  height: auto;
+    height: 300px;
+  /*height: auto;*/
+    object-fit: cover;
   transition: .5s ease;
   backface-visibility: hidden;
     float: left;
