@@ -41,7 +41,7 @@ h2{
 
 nav ul{
   list-style-type: none;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 nav li{
@@ -50,7 +50,7 @@ nav li{
     padding: 8px;
   text-decoration: none;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #000000;
     
     text-align: center;
 }
@@ -59,7 +59,7 @@ nav li:hover{
 }
 
 nav a{
-  color: #FFFFFF;
+  color: #000000;
   font-family: 'Roboto-thin', sans-serif;
   text-decoration: none;
     text-transform: uppercase;
@@ -90,7 +90,7 @@ nav a:hover{
 
 .logo {
     width: 90px;
-    
+    margin-top: -39px;
     padding: 20px; 
     position:fixed;
     
@@ -132,7 +132,7 @@ nav a:hover{
 
 .container{
   display: grid;
-grid-template-columns: 0.5fr .1fr .5fr 0.5fr 0.5fr 0.5fr;
+grid-template-columns: 0.6fr .1fr .5fr 1.5fr 0.5fr 0.5fr;
     grid-row-gap: 0px;
   grid-template-rows: 80px 60px 620px 60px auto auto auto auto auto auto auto auto auto auto auto ; 
   width: 100vw; 
@@ -157,27 +157,58 @@ grid-template-columns: 0.5fr .1fr .5fr 0.5fr 0.5fr 0.5fr;
 }
 
 .nav2{
-   top: 0px;
-    left: 0px;
-    height: 60px;
     width: 100%;
-    background: #2f2f2f;
-  padding-top: 40px; 
-  text-align: right; 
-    padding-left: 20px; 
-    padding-right: 80px; 
-    padding-bottom: 50px;
+    background: #ffffff;
+    padding: 10px 30px;
+    align-items: center;
     
-    margin-top: -15px;
     border-bottom: 2px solid #eeeeee;
-    color: white;
     position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    
+    
     
     
     
 }
 
+.links {
+    display: flex;
+    list-style: none;
+}
 
+.links li {
+    margin-right: 24px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #999999;
+    letter-spacing: -0.5px;
+}
+
+.links li a:hover, .links li a:active {
+    color: #000;
+}
+
+
+.sections {
+    padding-top: 50px;
+}
+
+section {
+    height: 100vh;
+    background: #000000;
+    padding-left: 30px;
+    padding-top: 20px;
+    text-align: center;
+    color: #FFF;
+}
+
+
+}
 
 header{
  background: transparent;
@@ -223,12 +254,44 @@ header p{
     align-items: center;
     grid-row: 1/span 3;
     
-   background-image: url("../images/coverbanner6.jpg");   
+   background-image: url("../images/bannernotext.png");
+    
+    object-fit: cover;
     color: black;
     border-bottom: 4px solid #aaaaaa;  
     
 }
 
+.backgroundtext{
+    grid-column: 1/span 4;
+    align-items: center;
+    grid-row: 3/span 1;
+    padding-top: 100px;
+    padding-left: 100px;
+   background: transparent;
+    font-family: 'lora', sans-serif;
+    font-size: 60px;
+    letter-spacing: 10px;
+    line-height: 100px;
+    border-bottom: 4px solid #aaaaaa;  
+    font-weight: 50;
+    
+}
+
+.backgroundtext h2 {
+     font-size: 20px;
+    font-family: 'lora', sans-serif;
+    color: #000000;
+    line-height: 30px;
+    text-align: left;
+    height: 120px; 
+    margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-style: italic;
+    
+    
+}
 
 .content-div{
     grid-column: 1/span 1;
@@ -249,12 +312,12 @@ header p{
     
 }
 
-.content-div h1 {
+.content h1 {
      font-size: 30px;
     font-family: 'Roboto-light', sans-serif;
     margin-bottom: 10px;
     border-bottom: 2px #FFFFFF solid;
-    color: #FFFFFF;
+    color: #000000;
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -267,12 +330,12 @@ header p{
     
 }
 
-.content-div2 h1 {
+.content2 h1 {
      font-size: 30px;
     font-family: 'Roboto-light', sans-serif;
     margin-bottom: 10px;
     border-bottom: 2px #FFFFFF solid;
-    color: #FFFFFF;
+    color: #000000;
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -286,7 +349,7 @@ header p{
 }
 
 .content{
-    grid-column: 3/span 5;
+    grid-column: 2/span 4;
     align-items: center;
     grid-row: 4/span 3;
     background: transparent;
@@ -294,13 +357,14 @@ header p{
     padding-top: 50px; 
     padding-right: 10%;
     padding-left: 4%;
+    text-align: justify;
     
     
 }
     
 
 .content2 {
-    grid-column: 3/span 5;
+    grid-column: 2/span 4;
     align-items: center;
     grid-row: 7/span 3;
     background: transparent;
@@ -308,30 +372,13 @@ header p{
     padding-top: 50px; 
     padding-right: 10%;
     padding-left: 4%;
-    text-align: left;
+    text-align: justify;
     
     
 }
 
 
-.content-div2{
-    grid-column: 1/span 1;
-    align-items: center;
-    grid-row: 7/span 3;
-    background: #9DCD97;
-    color: black;
-    padding-top: 30px; 
-    margin-top: 45px;
-    margin-left: 80px;
-    margin-bottom: 100px;
-    padding-right: 40px;
-    padding-left: 4%;
-    border-radius: 10px;
-    text-align: center; 
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
-    
-    
-}
+
 
 
 .location {
@@ -345,19 +392,55 @@ header p{
     padding-right: 10%;
     padding-left: 4%;
     text-align: left;
+    background-image: url("../images/lowopactitya2.png");
     border-top: 2px #FFFFFF solid;
     
     
 }
 
-.location h2{
+
+
+
+
+.location2 {
+    grid-column: 1/span 6;
+    align-items: center;
+    grid-row: 14/span 1;
+    background: #D0D6D0;
+    color: black;
+    margin-top: 0px; 
+    padding-top: 10px; 
+    padding-right: 15%;
+    padding-left: 15%;
+    text-align: left;
+    border-top: 2px #FFFFFF solid;
+    
+    
+}
+
+
+.location2 h1{
   font-size: 40px;
     font-family: 'Roboto-light', sans-serif;
     margin-bottom: 0px;
     
-    color: #FFFFFF;
+    color: #000000;
     
-    text-transform: lowercase; 
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 100;
+}
+
+
+
+.location2 p{
+    color: #000000;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    background: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 
@@ -402,7 +485,7 @@ header p{
 .keynote {
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 14/span 1;
+    grid-row: 15/span 1;
     background: #eeeeee;
     color: black;
     margin-top: 20px; 
@@ -446,7 +529,7 @@ header p{
 .workshop {
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 15/span 1;
+    grid-row: 16/span 1;
     background-color: #D0D6D0;
     color: black;
     margin-top: 20px; 
@@ -504,7 +587,17 @@ header p{
     
 }
 
-
+#teamdiv {
+    height: auto;
+    width: 1200px;
+    
+    background: #FAFAFA;
+    border-radius: 10px;
+    margin: auto;
+    
+    
+    
+}
 #team1 {
     height: 255px;
     width: 480px;
@@ -513,7 +606,8 @@ header p{
     float: left;
     background: #FAFAFA;
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px;
+    
     
     
 }
@@ -531,11 +625,11 @@ header p{
     font-family: 'Roboto', sans-serif;
     color: #5D5E5D;
     width: auto;
-    background: #D0D6D0;
+    
     letter-spacing: 2px;
     border-radius: 5px;
     padding: 0px;
-    margin-bottom: 5px;
+    margin-bottom: -5px;
     margin-left: 20px;
 }
 
@@ -575,10 +669,13 @@ header p{
 }
 
 .location p{
-    color: white;
+    color: #000000;
     line-height: 30px;
     font-size: 15px;
     font-family: 'Lora', serif;
+    
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .p2{
