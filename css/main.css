@@ -132,9 +132,9 @@ nav a:hover{
 
 .container{
   display: grid;
-grid-template-columns: 0.6fr .1fr .5fr 1.5fr 0.5fr 0.5fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 0px;
-  grid-template-rows: 80px 60px 620px 60px auto auto auto auto auto auto auto auto auto auto auto; 
+  grid-template-rows: 80px 60px 620px 60px auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
   width: 100vw; 
     
 }
@@ -167,6 +167,7 @@ grid-template-columns: 0.6fr .1fr .5fr 1.5fr 0.5fr 0.5fr;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .05);
     
     
     
@@ -307,24 +308,6 @@ header p{
     
 }
 
-.content-div{
-    grid-column: 1/span 1;
-    align-items: center;
-    grid-row: 4/span 3;
-    background: #7E9D7C;
-    color: black;
-    padding-top: 30px; 
-    margin-top: 45px;
-    margin-left: 80px;
-    margin-bottom: 100px;
-    padding-right: 40px;
-    padding-left: 4%;
-    border-radius: 10px;
-    text-align: center; 
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
-    
-    
-}
 
 .content h1 {
      font-size: 30px;
@@ -369,8 +352,8 @@ header p{
     background: transparent;
     color: black;
     padding-top: 50px; 
-    padding-right: 10%;
-    padding-left: 4%;
+    padding-right: 8%;
+    padding-left: 8%;
     text-align: justify;
     
     
@@ -384,8 +367,8 @@ header p{
     background: transparent;
     color: black;
     padding-top: 50px; 
-    padding-right: 10%;
-    padding-left: 4%;
+    padding-right: 8%;
+    padding-left: 8%;
     text-align: justify;
     
     
@@ -396,7 +379,7 @@ header p{
 .location {
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 13/span 1;
+    grid-row: 10/span 1;
     background: #5e5f5e;
     color: black;
     margin-top: 50px; 
@@ -414,7 +397,7 @@ header p{
 .location2 {
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 14/span 1;
+    grid-row: 11/span 1;
     background: #D0D6D0;
     color: black;
     margin-top: 0px; 
@@ -582,10 +565,13 @@ header p{
     
 }
 
+
+
+
 .keynote {
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 15/span 1;
+    grid-row: 12/span 1;
     background: #eeeeee;
     color: black;
     margin-top: 20px; 
@@ -633,7 +619,7 @@ header p{
 .workshop {
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 16/span 1;
+    grid-row: 13/span 1;
     background-color: #D0D6D0;
     color: black;
     margin-top: 20px; 
@@ -641,6 +627,8 @@ header p{
     padding-right: 15%;
     padding-left: 15%;
     text-align: left;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
     
     
     
@@ -690,50 +678,74 @@ header p{
     text-align: justify;
 }
 
+
 .team {
     grid-column: 1/span 6;
     align-items: center;
-    grid-row: 16/span 1;
-    background-color: #eeeeee;
+    grid-row: 14/span 1;
+    background: #eeeeee;
     color: black;
-    margin-top: 20px; 
-    padding-top: 20px; 
+    margin-top: 0px; 
+    padding-top: 10px; 
     padding-right: 15%;
     padding-left: 15%;
     text-align: left;
-    padding-bottom: 100%
     
     
     
     
 }
 
-#teamdiv {
-    height: auto;
-    width: 100%;
-    
+.team2 {
+    grid-column: 2/span 2;
+    align-items: center;
+    grid-row: 15/span 1;
     background: transparent;
+    color: black;
+    margin-top: 0px; 
+    padding-top: 10px; 
+    
+    text-align: left;
+    margin-right: 20px;
+    padding: 0px;
+    margin-bottom: 50px;
     border-radius: 10px;
-    
-    padding-bottom: 100px;
-    
+    object-fit: cover;
     
     
 }
-#team1 {
-    height: 255px;
-    width: 45%;
-    padding-right: 50px;
-    padding: 20px;
-    float: left;
-    background: #FAFAFA;
+
+
+#team2div {
+    height: 250px;
+    width: 100%;
+     background: #FAFAFA;
     border-radius: 10px;
     margin: 20px;
-    overflow: auto;
+    padding: 20px;
     
+}
+
+.team3 {
+    grid-column: 4/span 2;
+    align-items: center;
+    grid-row: 15/span 1;
+    background: transparent;
+    color: black;
+    margin-top: 0px; 
+    padding-top: 10px; 
+    
+    text-align: left;
+    margin-left: 20px;
+    padding: 0px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    object-fit: cover;
     
     
 }
+
+
 .team h1{
   font-size: 40px;
     font-family: 'Roboto', sans-serif;
@@ -744,7 +756,7 @@ header p{
     font-weight: 100;
 }
 
-.team h2{
+.team2 h2{
   font-size: 23px;
     font-family: 'Roboto', sans-serif;
     color: #000000;
@@ -752,29 +764,60 @@ header p{
     font-weight: 100;
     letter-spacing: 2px;
     border-radius: 20px;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
     
 }
 
-.team h3{
+.team2 h3{
   font-size: 13px;
-    font-family: 'Lora', serif;
+    font-family: 'roboto', serif;
     color: #5D5E5D;
     width: auto;
-    font-style: italic;
+    text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 20px;
     margin-bottom: 0px;
 }
 
 
-.team p{
+.team2 p{
     color: black;
     line-height: 30px;
     font-size: 12px;
     font-family: 'Lora', serif;
 }
 
+
+.team3 h2{
+  font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    width: auto;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    margin-bottom: -10px;
+    
+}
+
+.team3 h3{
+  font-size: 13px;
+    font-family: 'roboto', serif;
+    color: #5D5E5D;
+    width: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+
+.team3 p{
+    color: black;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: 'Lora', serif;
+}
 
 .content p{
     color: black;
@@ -876,6 +919,24 @@ input[type=submit]:hover {
   opacity: 1;
   display: block;
   width: 200px;
+    height: 200px;
+  /*height: auto;*/
+    object-fit: cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    float: left;
+    border-radius: 5px;
+    margin-right: 35px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+   
+    
+}
+
+.teamimage {
+  opacity: 1;
+  display: block;
+  width: 45%;
     height: 200px;
   /*height: auto;*/
     object-fit: cover;
