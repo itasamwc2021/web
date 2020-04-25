@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
       <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 
       
     <title>ITASA MWC 2021</title>
@@ -17,7 +18,19 @@
       <main>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     
-       <a name="home" id='home'></a>   
+      
+          
+    <div class="container">
+           <div class="background"></div> 
+    
+    
+        
+        
+        <div class="backgroundimg">
+            <div class='header-overlay'></div>
+        </div> 
+        
+         <a name="home" id='home'></a>   
     <nav class="nav2">
         
       <a href="#home"><img src="images/graywhite.png" alt="logo" class="logo"></a>
@@ -36,14 +49,7 @@
         
         </div>
           </nav>
-          
-    <div class="container">
-           <div class="background"></div> 
-    
-    
         
-        
-        <div class="backgroundimg"></div> 
         <div class="backgroundtext">branch & bound
         <h2>
             
@@ -99,7 +105,7 @@ In combining programming with a sense of greater community at the 2021 Midwest C
                <br>
                <img src="images/rogel.png" class="workshopimage">
                <h2>Rogel Ballroom</h2>
-               <p>
+               <p style="height: 210px">
                The opening ceremony and keynote speaker event
 on Friday will take place in the Rogel Ballroom at
 the Michigan Union. As one of the largest event
@@ -113,7 +119,7 @@ projector screen, adjustable lighting, and more
                
                <img src="images/league.png" class="workshopimage">
                <h2>Michigan League</h2>
-               <p>
+                <p>
               Workshops will be held in several rooms in the
 Michigan League, the beautiful and spacious
 student union located on the north end of Central
@@ -396,7 +402,7 @@ to Taiwan to educate local entrepreneurs and support the
                  
                  
                  
-         <div id="team1">  <img sr c="images/ElenaFang.jpg" class="workshopimage">
+         <div id="team1">  <img src="images/ElenaFang.jpg" class="workshopimage">
              <h2>Elena Fang</h2>
              <h3>Technology</h3><p>
              <b>'21 Information Science</b><br>
@@ -412,12 +418,13 @@ to Taiwan to educate local entrepreneurs and support the
           
           
           
-          
           <div class="schedule">
           
           
           <div id="scheduleclass">
               <h1>Conference Schedule</h1>
+              
+              
                     <div id="schedule2">
                
              <h2> Friday</h2>
@@ -448,6 +455,8 @@ Breakout into reflection at 3:30<br>
 4:30 Ice Cream Social<br>
 7:00 Banquet<br>
 11:00 After party<br>
+                         
+                         
 
                    </div> 
                    
@@ -472,7 +481,18 @@ Breakout into reflection at 3:30<br>
     </footer>
         
     
-    
+     <script>
+$(window).scroll(function() {
+  var scrollTop = $(this).scrollTop();
+
+  $('.header-overlay').css({
+    opacity: function() {
+      var elementHeight = $(this).height();
+      return 1 - (elementHeight - scrollTop) / elementHeight;
+    }
+  });
+});
+</script>
   
   </body>
 </html>
