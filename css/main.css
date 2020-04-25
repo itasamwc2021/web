@@ -134,7 +134,7 @@ nav a:hover{
   display: grid;
 grid-template-columns: 0.6fr .1fr .5fr 1.5fr 0.5fr 0.5fr;
     grid-row-gap: 0px;
-  grid-template-rows: 80px 60px 620px 60px auto auto auto auto auto auto auto auto auto auto auto ; 
+  grid-template-rows: 80px 60px 620px 60px auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ; 
   width: 100vw; 
     
 }
@@ -379,8 +379,6 @@ header p{
 
 
 
-
-
 .location {
     grid-column: 1/span 6;
     align-items: center;
@@ -397,9 +395,6 @@ header p{
     
     
 }
-
-
-
 
 
 .location2 {
@@ -420,18 +415,105 @@ header p{
 }
 
 
+#locationclass {
+    height: auto;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-bottom: 00px;
+    
+    
+}
+
+#locationclass1 {
+    height: auto;
+    width: 50%;
+    float: left;
+    padding-bottom: 2%;
+    background: #eeeeee;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    color: #000000;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    padding-bottom: 0%;
+    
+}
+
+#locationclass2 {
+    height: auto;
+    width: 35%;
+    float: left;
+    padding-bottom: 2%;
+    background: #eeeeee;
+    margin: 20px;
+    
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    color: #000000;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    
+}
+
+#scheduleclass {
+    height: auto;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-bottom: 00px;
+    
+    
+}
+#schedule2 {
+    height: auto;
+    width: 40%;
+    float: left;
+    padding-bottom: 2%;
+    background: #eeeeee;
+    margin: 20px;
+    
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    color: #000000;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    
+}
+
+
+
+
 .location2 h1{
   font-size: 40px;
     font-family: 'Roboto-light', sans-serif;
-    margin-bottom: 0px;
-    
+    margin-bottom: 20px;
+    padding-bottom: 0px;
     color: #000000;
+    
     
     text-transform: uppercase;
     letter-spacing: 10px;
     font-weight: 100;
 }
 
+.location2 h2{
+  font-size: 20px;
+    font-family: 'Roboto-light', sans-serif;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #000000;
+    
+    
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 100;
+}
 
 
 .location2 p{
@@ -442,6 +524,7 @@ header p{
     background: #eeeeee;
     padding: 20px;
     border-radius: 10px;
+    text-align: justify;
 }
 
 
@@ -471,12 +554,13 @@ header p{
 }
 
 #workshopclass2 {
-    height: 220px;
+    height: 100%;
     padding-bottom: 2%;
     background: #eeeeee;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 10%;
     
     
     /*/box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);/*/
@@ -604,28 +688,31 @@ header p{
     
     
     
+    
 }
 
 #teamdiv {
     height: auto;
-    width: 1200px;
+    width: 100%;
     
-    background: #FAFAFA;
+    background: transparent;
     border-radius: 10px;
-    margin: auto;
+    
+    padding-bottom: 100px;
     
     
     
 }
 #team1 {
     height: 255px;
-    width: 480px;
+    width: 45%;
     padding-right: 50px;
     padding: 20px;
     float: left;
     background: #FAFAFA;
     border-radius: 10px;
     margin: 20px;
+    overflow: auto;
     
     
     
@@ -641,7 +728,7 @@ header p{
 }
 
 .team h2{
-  font-size: 25px;
+  font-size: 23px;
     font-family: 'Roboto', sans-serif;
     color: #000000;
     width: auto;
@@ -653,12 +740,12 @@ header p{
 }
 
 .team h3{
-  font-size: 16px;
+  font-size: 13px;
     font-family: 'Lora', serif;
     color: #5D5E5D;
     width: auto;
     font-style: italic;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     border-radius: 20px;
     margin-bottom: 0px;
 }
@@ -697,13 +784,6 @@ header p{
     border-radius: 10px;
 }
 
-.p2{
-    color: black;
-    line-height: 30px;
-    font-size: 24px;
-    font-family: 'Lato', sans-serif;
-}
-
 
 .content h2{
   font-size: 40px;
@@ -714,39 +794,35 @@ header p{
 
 
 
-.contact{
-    grid-column: 2/span 4;
+
+.schedule {
+    grid-column: 1/span 6;
     align-items: center;
-    grid-row: 6/span 3;
-    background: transparent;
+    grid-row: 17/span 1;
+    background-color: #D0D6D0;
     color: black;
-    padding-right: 12%;
-    padding-left: 3%;
-    padding-bottom: 25%;
+    margin-top: 20px; 
+    padding-top: 20px; 
+    padding-right: 15%;
+    padding-left: 15%;
+    text-align: left;
+    padding-bottom: 45%;
+    
+    
+    
 }
 
-.contact h2 {
-     font-size: 30px;
-    font-family: 'Roboto-thin', sans-serif;
-    margin-bottom: 10px;
-    border-bottom: 0px #aaaaaa solid;
-    width: 190px;
-    background: #eeeeee;
-    line-height: 30px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
 
 
 footer{
-  background: #2f2f2f;
-  color: white;
+  background: #FFFFFF;
+  color: 000000;
  width: 100%;
   text-align: center;
     grid-column: 1/span 6;
     grid-row: 8/span 1;
     height: 60px;
-    border-top: 1px dashed #eeeeee;
+    border-top: 1px solid #eeeeee;
     bottom: 0%;
     padding-bottom: 5%;
     
@@ -838,6 +914,43 @@ input[type=submit]:hover {
 }
 
 
+
+.image4 {
+  opacity: 1;
+  display: block;
+  width: 95%;
+    height: auto;
+  /*height: auto;*/
+    object-fit: cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    border-radius: 5px;
+    margin-top: -1px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+   
+    
+}
+
+.image5 {
+  opacity: 1;
+  display: block;
+  width: 95%;
+    height: 150px;
+    object-fit: cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+   
+    
+}
 
 
 
