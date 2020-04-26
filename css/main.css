@@ -461,7 +461,7 @@ header p{
     margin-bottom: 10px;
     padding-bottom: 0px;
     color: #000000;
-    border-bottom: 2px #FFFFFF solid;
+    
     
     line-height: 30px;
     text-transform: uppercase;
@@ -469,6 +469,20 @@ header p{
     
 }
 
+.location2 h3{
+  font-size: 30px;
+    font-family: 'Roboto-light', sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    width: auto;
+    border-bottom: 1px white solid;
+    
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 100;
+}
 
 .location2 p{
     color: #000000;
