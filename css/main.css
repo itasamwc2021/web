@@ -8,6 +8,7 @@ body{
   padding: 0;
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
+    position:relative;
 }
  
   
@@ -193,6 +194,22 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 
+.menu-item {
+    display: inline-block;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 1rem;
+    color: inherit;
+}
+
+.menu-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu-item.active {
+    background: #00a8ff;
+    color: #ffffff;
+}
 
 
 header{
@@ -353,28 +370,12 @@ header p{
     padding-right: 8%;
     padding-left: 8%;
     text-align: justify;
+    padding-bottom: 5%;
     
     
 }
 
 
-
-.location {
-    grid-column: 1/span 6;
-    align-items: center;
-    grid-row: 10/span 1;
-    background: #5e5f5e;
-    color: black;
-    margin-top: 50px; 
-    padding-top: 50px; 
-    padding-right: 10%;
-    padding-left: 4%;
-    text-align: left;
-    background-image: url("../images/lowopactitya2.png");
-    border-top: 2px #FFFFFF solid;
-    
-    
-}
 
 
 
@@ -476,10 +477,10 @@ header p{
     margin-bottom: 20px;
     padding-bottom: 10px;
     color: #000000;
-    text-align: center;
+    
     width: auto;
     border-bottom: 1px white solid;
-    
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
     font-weight: 100;
@@ -1001,8 +1002,7 @@ header p{
     text-align: left;
     border-top: 2px #FFFFFF solid;
     padding-bottom: 50px;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;  
     
 }
 
@@ -1021,8 +1021,6 @@ footer{
     
     
 }
-
-
 
 footer p{
     font-family: 'Roboto light', sans-serif;
@@ -1086,6 +1084,7 @@ footer p{
    
     
 }
+
 
 
 
