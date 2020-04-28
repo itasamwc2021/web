@@ -133,7 +133,7 @@ nav a:hover{
   display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 0px;
-  grid-template-rows: 80px 60px 620px 60px auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
+  grid-template-rows: 80px 60px 85vh 0px auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
   width: 100vw; 
     
 }
@@ -254,9 +254,7 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 1/span 3;
-    
-   background-image: url("../images/bannernotext.png");
-    
+    background-image: url("../images/bannernotext.png");
     object-fit: cover;
     color: black;
     border-bottom: 4px solid #ffffff;  
