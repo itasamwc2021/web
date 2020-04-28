@@ -324,10 +324,11 @@ header p{
     font-style: italic;
     animation-duration: 3.5s;
   animation-name: bounceIn;
-    padding-left: 25px;
+    padding-left: 15px;
     
     
 }
+
 
 
 .content h1 {
