@@ -341,6 +341,7 @@ header p{
     margin-left: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
+
     
     
 }
@@ -370,7 +371,7 @@ header p{
     padding-right: 8%;
     padding-left: 8%;
     text-align: justify;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     
     
 }
@@ -420,8 +421,8 @@ header p{
     color: #000000;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
-    padding-bottom: 0%;
+    font-family: 'Nunito', serif;
+    padding-bottom: 3%;
     
 }
 
@@ -439,7 +440,7 @@ header p{
     color: #000000;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
     
 }
 
@@ -490,7 +491,7 @@ header p{
     color: #000000;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
     background: #eeeeee;
     padding: 20px;
     border-radius: 10px;
@@ -530,7 +531,7 @@ header p{
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     
     
     /*/box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);/*/
@@ -551,6 +552,7 @@ header p{
     padding-right: 15%;
     padding-left: 15%;
     text-align: left;
+    padding-bottom: 10%;
     
     
     
@@ -559,8 +561,8 @@ header p{
 .keynote p{
     color: black;
     line-height: 34px;
-    font-size: 17px;
-    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-family: 'Nunito', serif;
     text-align: justify;
 }
 
@@ -646,7 +648,7 @@ header p{
     color: #000000;
     line-height: 23px;
     font-size: 14px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
     text-align: justify;
 }
 
@@ -759,7 +761,7 @@ header p{
     color: black;
     line-height: 30px;
     font-size: 12px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
 }
 
 
@@ -791,33 +793,25 @@ header p{
     color: black;
     line-height: 30px;
     font-size: 12px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito s', serif;
 }
 
 .content p{
     color: black;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
 }
 
 .content2 p{
     color: black;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
 
 }
 
-.location p{
-    color: #000000;
-    line-height: 30px;
-    font-size: 15px;
-    font-family: 'Lora', serif;
-    
-    padding: 20px;
-    border-radius: 10px;
-}
+
 
 
 .content h2{
@@ -862,7 +856,7 @@ header p{
     color: #000000;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
     padding-bottom: 0%;
     
 }
@@ -918,7 +912,7 @@ header p{
     color: #000000;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
     padding-bottom: 5%;
     margin-top: 70px;
     
@@ -938,13 +932,13 @@ header p{
     color: #000000;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
     
 }
 
 
 #scheduleclass2 p {
-    font-family: 'Lora', sans-serif;
+    font-family: 'Nunito', sans-serif;
     
     letter-spacing: 0px;
     font-size: 9pt;
@@ -965,7 +959,7 @@ header p{
     color: #000000;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', serif;
     
 }
 
@@ -1068,8 +1062,8 @@ footer p{
 .image2 {
   opacity: 1;
   display: block;
-  width: 300px;
-    height: 300px;
+  width: 250px;
+    height: 250px;
   /*height: auto;*/
     object-fit: cover;
   transition: .5s ease;
@@ -1164,7 +1158,7 @@ p{
     color: black;
     line-height: 30px;
     font-size: 15px;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 
