@@ -528,30 +528,64 @@ World Vision International<br>
       </main>
     
      <script>
-         
-$(window).scroll(function() {
-  var scrollTop = $(this).scrollTop();
-
-  $('.header-overlay').css({
-    opacity: function() {
-      var elementHeight = $(this).height();
-      return 1 - (elementHeight - scrollTop) / elementHeight;
-    }
-  });
-});
+$(document).ready(function () {
     
-$('a[href*="#"]').on('click', function(e) {
-  e.preventDefault()
+    // MARK: - Nav Bar Variable Initialization
+    var navBar = $('.links'),
+        sectionLinkItems =  navBar.find('a[href*="#"]'),
+        sectionsBeingScrolled = sectionLinkItems.map(function(){
+        var prefix = jQuery(this).attr("href"),
+        id = prefix.substring(prefix.indexOf('#')),
+        item = jQuery(id);
+        if (item.length) { return item; }
+    });
 
-  $('html, body').animate(
-    {
-      scrollTop: $($(this).attr('href')).offset().top,
-    },
-    600,
-    'linear'
-  )
+    $(window).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+
+        $('.header-overlay').css({
+        opacity: function() {
+          var elementHeight = $(this).height();
+          return 1 - (elementHeight - scrollTop) / elementHeight;
+        }
+        });
+        
+        // MARK: - Nav Bar Selection
+
+        var current = sectionsBeingScrolled.map(function() {
+            if (jQuery(this).offset().top < scrollTop + navBar.outerHeight()+40)
+                return this;
+        })
+
+        var elementId = "";
+        if (current.length > 1) {
+            current = current[current.length-1];
+            elementId = '#' + current[current.length-1].id;
+        } else {
+            elementId = "#about";
+        }
+
+        sectionLinkItems.map(function() {
+            if (jQuery(this).attr("href") != elementId)
+                jQuery(this).removeClass("active");
+            else
+                jQuery(this).addClass("active");
+        })
+
+    });
+
+    $('a[href*="#"]').on('click', function(e) {
+      e.preventDefault()
+
+      $('html, body').animate(
+        {
+          scrollTop: $($(this).attr('href')).offset().top,
+        },
+        600,
+        'linear'
+      )
+    })
 })
-     
 </script>
   
   </body>
