@@ -9,7 +9,10 @@ body{
     position:relative;
 }
  
-
+a {
+    color: black;
+    text-decoration: underline;
+}
 @keyframes bounceIn {
   0% {
     transform: scale(0.1);
@@ -1050,6 +1053,7 @@ footer p{
     font-family: 'Roboto light', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 13px;
 }
 
 
