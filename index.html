@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
       <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
-    
+        
       <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -57,7 +58,11 @@
        
         
        <a class="about" id="about"></a>
-        <div class="content" >
+        <div class="content" data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
         <h1>Our Theme</h1>
             
             <p>
@@ -72,7 +77,11 @@ We are confident this analogy will leave attendees with a better grasp of the po
            <hr>
         </div>
         
-        <div class="content2">
+        <div class="content2" data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
         <h1>Our Vision</h1>
             
             <p>
@@ -96,7 +105,7 @@ In combining programming with a sense of greater community at the 2021 Midwest C
            <br>
                <img src="images/annarbor.jpg" class="workshopimage">
                <h2>The city & campus</h2>
-               <p style= "height: auto; padding-bottom: 5%">
+               <p style= "height: auto; padding-bottom: 5%" >
                    The University of Michigan was established in the city of Ann Arbor in 1837, and since then hundreds of thousands of students and faculty have been proud to call Ann Arbor home. The city is ranked one of the best small college towns to live in, one of the most educated cities, and one of the happiest inthe nation. Offering a wide and diverse array of restaurants, shops, and entertainment, Ann Arbor is the perfect place to explore, learn, and experience a variety of cultures. In addition to its positive ratings and diverse population, Ann Arbor is a green city that prides itself in its natural beauty and environmentally sound transportation. With an abundance of things to do, proximity to campus, and unique community, Ann Arbor is certainly captivating and a city worth visiting.</p> <br> <br>
                
                <h3>Venues</h3>
@@ -556,7 +565,13 @@ $(window).scroll(function(){
     $(".backgroundtext").css("opacity", 1 - $(window).scrollTop() / 250);
   });
          
+
+         
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(3200);
+  </script>
   
   </body>
 </html>

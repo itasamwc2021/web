@@ -22,6 +22,14 @@ body{
 }
 
 
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
 
 .active {
     background: #eeeeee;
@@ -369,6 +377,8 @@ header p{
     padding-right: 8%;
     padding-left: 8%;
     text-align: justify;
+    animation-duration: 3s;
+  animation-name: slidein;
     
     
 }
@@ -385,6 +395,8 @@ header p{
     padding-left: 8%;
     text-align: justify;
     padding-bottom: 15%;
+    animation-duration: 3s;
+  animation-name: slideright;
     
     
 }
@@ -511,6 +523,7 @@ header p{
     padding: 20px;
     border-radius: 10px;
     text-align: justify;
+    
 }
 
 
@@ -816,6 +829,7 @@ header p{
     line-height: 30px;
     font-size: 15px;
     font-family: 'Nunito', serif;
+    
 }
 
 .content2 p{
