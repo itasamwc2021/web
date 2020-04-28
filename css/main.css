@@ -10,6 +10,18 @@ body{
 }
  
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 .active {
     background: #eeeeee;
@@ -193,23 +205,6 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 
-.menu-item {
-    display: inline-block;
-    font-size: 1.125rem;
-    text-decoration: none;
-    padding: 1rem;
-    color: inherit;
-}
-
-.menu-item:hover {
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.menu-item.active {
-    background: #00a8ff;
-    color: #ffffff;
-}
-
 
 header{
  background: transparent;
@@ -279,14 +274,32 @@ header p{
     align-items: center;
     grid-row: 3/span 1;
     padding-top: 100px;
-    padding-left: 100px;
+    padding-left: 80px;
    background: transparent;
     font-family: 'Lora', sans-serif;
     font-size: 60px;
     letter-spacing: 10px;
     line-height: 100px;
-    border-bottom: 4px solid #ffffff;  
+    
     font-weight: 50;
+    
+    
+    
+}
+.backgroundtext h1 {
+     font-size: 60px;
+    font-family: 'Lora', sans-serif;
+    color: #000000;
+    line-height: 0px;
+    text-align: left;
+    height: auto; 
+    margin-left: 20px;
+    text-transform: lowercase;
+    letter-spacing: 10px;
+    font-weight: 100;
+    animation-duration: 2s;
+  animation-name: bounceIn;
+    
     
 }
 
@@ -301,6 +314,9 @@ header p{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-style: italic;
+    animation-duration: 3.5s;
+  animation-name: bounceIn;
+    padding-left: 25px;
     
     
 }
@@ -454,6 +470,8 @@ header p{
     letter-spacing: 10px;
     font-weight: 100;
 }
+
+
 
 .location2 h2{
   font-size: 23px;
@@ -1166,6 +1184,8 @@ p{
 .responsive {
     width: 100%;
   }
+
+
 
 
 }

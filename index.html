@@ -31,7 +31,10 @@
             <div class='header-overlay'></div>
         </div> 
         
-          
+           <div class="backgroundtext"><h1>branch & bound</h1>
+        <h2>
+            
+            University of Michigan MWC 2021</h2></div>
     <nav class="nav2">
         
       <a href="#home"><img src="images/graywhite.png" alt="logo" class="logo"></a>
@@ -51,10 +54,7 @@
         </div>
           </nav>
         
-        <div class="backgroundtext">branch & bound
-        <h2>
-            
-            University of Michigan MWC 2021</h2></div>
+       
         
        <a class="about" id="about"></a>
         <div class="content" >
@@ -92,7 +92,7 @@ In combining programming with a sense of greater community at the 2021 Midwest C
            <div class="location2">
             <a class="location" id="location"></a>
                <br> <br> <br>
-            <h1>LOCATION</h1>
+               <h1>Location</h1>
            <br>
                <img src="images/annarbor.jpg" class="workshopimage">
                <h2>The city & campus</h2>
@@ -552,6 +552,10 @@ $('a[href*="#"]').on('click', function(e) {
   )
 })
      
+$(window).scroll(function(){
+    $(".backgroundtext").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+         
 </script>
   
   </body>
