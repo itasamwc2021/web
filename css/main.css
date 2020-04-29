@@ -286,7 +286,7 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 1/span 3;
-    background-image: url("../images/bannernotext.png");
+    background-image: url("../images/sharpened.jpg");
     object-fit: cover;
     color: black;
     border-bottom: 4px solid #ffffff;  
@@ -317,8 +317,9 @@ header p{
     font-size: 60px;
     letter-spacing: 10px;
     line-height: 100px;
-    
+    color: #ffffff;
     font-weight: 50;
+    
     
     
     
@@ -343,7 +344,7 @@ header p{
 .backgroundtext h2 {
      font-size: 20px;
     font-family: 'Lora', sans-serif;
-    color: #000000;
+    color: #ffffff;
     line-height: 30px;
     text-align: left;
     height: 120px; 
@@ -1464,7 +1465,7 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 1/span 3;
-    background-image: url("../images/bannertablet.png");
+    background-image: url("../images/tabletgradientedit.jpg");
     object-fit: cover;
     color: black;
     border-bottom: 4px solid #ffffff;  
@@ -1489,14 +1490,15 @@ header p{
     align-items: center;
     grid-row: 3/span 1;
     padding-top: 100px;
-    padding-left: 80px;
+    padding-left: 40px;
    background: transparent;
     font-family: 'Lora', sans-serif;
     font-size: 50px;
     letter-spacing: 10px;
     line-height: 100px;
-    
+    color: #ffffff;
     font-weight: 50;
+    text-shadow: 1px 2px #aaaaaa;
     
     
     
@@ -1521,7 +1523,7 @@ header p{
 .backgroundtext h2 {
      font-size: 15px;
     font-family: 'Lora', sans-serif;
-    color: #000000;
+    color: #ffffff;
     line-height: 30px;
     text-align: left;
     height: 120px; 
@@ -2471,7 +2473,7 @@ p{
   display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 0px;
-  grid-template-rows: 80px 60px 40vh 0px auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
+  grid-template-rows: 80px 60px 36vh 0px auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
   width: 100vw; 
     
 }
@@ -2538,7 +2540,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   display: block;
   position: relative;
   top: -5px;
-  left: -70%;
+  left: -65%;
   
   z-index: 1;
   
@@ -2748,11 +2750,12 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 1/span 3;
-    background-image: url("../images/mobilebanner.png");
+    background-image: url("../images/mobilebanneredit.jpg");
     object-fit: cover;
     color: black;
     border-bottom: 4px solid #ffffff;  
-    height: 100%;
+    
+    
     
     
 }
@@ -2773,15 +2776,16 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 3/span 1;
-    padding-top: 180px;
-    padding-left: 30px;
+    padding-top:150px;
+    padding-left: 40px;
    background: transparent;
     font-family: 'Lora', sans-serif;
     font-size: 30px;
     letter-spacing: 10px;
     line-height: 40px;
-    
+    color: #ffffff;
     font-weight: 50;
+    text-shadow: 1px 1px #aaaaaa;
     
     
     
@@ -2791,7 +2795,7 @@ header p{
 .backgroundtext h2 {
      font-size: 10px;
     font-family: 'Lora', sans-serif;
-    color: #000000;
+    color: #ffffff;
     line-height: 30px;
     text-align: left;
     height: 120px; 
