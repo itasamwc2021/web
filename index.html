@@ -581,7 +581,18 @@ World Vision International<br>
     
     <script>
 $(document).ready(function () {
+    AOS.init(3200);
     
+    AOS.init({
+      disable: 'mobile'
+    }); 
+
+    AOS.init({
+      disable: function () {
+        var maxWidth = 950;
+        return window.innerWidth < maxWidth;
+      }
+    });
     // MARK: - Nav Bar Variable Initialization
     var navBar = $('.links'),
         sectionLinkItems =  navBar.find('a[href*="#"]'),
@@ -655,22 +666,6 @@ $(window).scroll(function(){
 
 </script>
 <script src="aos.js"></script>
-  <script>
-    AOS.init(3200);
-    
-      AOS.init({
-  disable: 'mobile'
-}); 
-
-AOS.init({
-  disable: function () {
-    var maxWidth = 950;
-    return window.innerWidth < maxWidth;
-  }
-});
-  </script>
-  
-  
   </body>
 </html>
 
