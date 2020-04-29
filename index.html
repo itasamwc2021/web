@@ -107,14 +107,14 @@ In combining programming with a sense of greater community at the 2021 Midwest C
                <br> <br> <br>
                <h1>Location</h1>
            <br>
-               <img src="images/annarbor.jpg" class="workshopimage">
+               <img src="images/annarbor.jpg" class="venueimage">
                <h2>The city & campus</h2>
                <p style= "height: auto; padding-bottom: 5%" >
                    The University of Michigan was established in the city of Ann Arbor in 1837, and since then hundreds of thousands of students and faculty have been proud to call Ann Arbor home. The city is ranked one of the best small college towns to live in, one of the most educated cities, and one of the happiest inthe nation. Offering a wide and diverse array of restaurants, shops, and entertainment, Ann Arbor is the perfect place to explore, learn, and experience a variety of cultures. In addition to its positive ratings and diverse population, Ann Arbor is a green city that prides itself in its natural beauty and environmentally sound transportation. With an abundance of things to do, proximity to campus, and unique community, Ann Arbor is certainly captivating and a city worth visiting.</p> <br> <br>
                
                <h3>Venues</h3>
                <br>
-               <img src="images/rogel.png" class="workshopimage">
+               <img src="images/rogel.png" class="venueimage">
                <h2>Rogel Ballroom</h2>
                <p style="height: 230px">
                The opening ceremony and keynote speaker event
@@ -128,7 +128,7 @@ projector screen, adjustable lighting, and more
                </p><br> <br>
                
                
-               <img src="images/league.png" class="workshopimage">
+               <img src="images/league.png" class="venueimage">
                <h2>Michigan League</h2>
                 <p style="height: 230px">
               Workshops will be held in several rooms in the
@@ -154,8 +154,8 @@ place here.
               
                  <div id="locationclass1">
                
-                     <h2> RESIDENCE INN ANN ARBOR</h2><br>
-                     <b>DOWNTOWN - MARRIOTT HOTELS</b><br><br>
+                     <h2> RESIDENCE INN ANN ARBOR</h2>
+                    <center> <b>DOWNTOWN - MARRIOTT HOTELS</b><br></center>
                      <img src="images/hotel.png" class="image4">
                      
                      <p>
@@ -549,7 +549,7 @@ Presotea<br>
                    </div> 
                    
                     
-                     <div id="sponsorclass2">
+                     <div id="sponsorclass3">
                Sinopac Financial Holdings Company Ltd<br>
 Taiwanese American Chamber of Commerce of Greater Chicago<br>
                         Taiwanese American Citizens League<br>
@@ -615,6 +615,17 @@ $(window).scroll(function(){
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init(3200);
+    
+      AOS.init({
+  disable: 'mobile'
+}); 
+
+AOS.init({
+  disable: function () {
+    var maxWidth = 900;
+    return window.innerWidth < maxWidth;
+  }
+});
   </script>
   
   </body>
