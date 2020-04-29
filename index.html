@@ -65,15 +65,47 @@
         
         
           </nav>
+    
+    <nav class="nav3">
+        <a href="#home"><img src="images/graywhite.png" alt="logo" class="logo"></a>
+      <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    
+    <ul id="menu">
+       <li><a href="#about">About</a></li>
+          <li><a href="#location">Location</a></li>
+            <li><a href="#keynote">Keynote</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+    </ul>
+  </div>
+</nav>
+        
+        
+        
+        
+        
+        
+          </nav>
         
        
         
-       <a class="about" id="about"></a>
+       
         <div class="content" data-aos="fade-left"
     data-aos-offset="200"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-easing="ease-in-out">
+            <a class="about" id="about"></a> <br> <br> <br>
         <h1>Our Theme</h1>
             
             <p>
@@ -350,9 +382,13 @@ Sweeting $$
               
           </div>
                  
-        <div class="team2">
+        <div class="team2" data-aos="zoom-in"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
                  
-                 <div id="team2div">
+                 <div id="team2div" >
                  <img src="images/brianlin.jpg" class="teamimage">
              <h2>Brian Lin</h2>
              <h3>Co-Director</h3> <p>
@@ -419,7 +455,11 @@ Sweeting $$
               
           </div>
         
-        <div class="team3">
+        <div class="team3" data-aos="zoom-in"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
             
             <div id="team2div">
         <img src="images/Serena%20Yee.jpg" class="teamimage">
@@ -583,7 +623,7 @@ World Vision International<br>
 $(document).ready(function () {
     AOS.init({
       disable: function () {
-        var maxWidth = 950;
+        var maxWidth = 650;
         return window.innerWidth < maxWidth;
       }
     });
@@ -643,10 +683,12 @@ $(document).ready(function () {
 
     $('a[href*="#"]').on('click', function(e) {
       e.preventDefault()
-
+        
+    var adjustedPadding = window.innerWidth < 1000 ? -50 : 0;
       $('html, body').animate(
         {
-          scrollTop: $($(this).attr('href')).offset().top,
+         
+          scrollTop: $($(this).attr('href')).offset().top + adjustedPadding,
         },
         600,
         'linear'
@@ -658,9 +700,10 @@ $(window).scroll(function(){
     $(".backgroundtext").css("opacity", 1 - $(window).scrollTop() / 250);
   });
 
-</script>
+ </script>
 <script src="aos.js"></script>
-
+  
+  
   </body>
 </html>
 
