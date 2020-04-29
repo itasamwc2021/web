@@ -592,8 +592,6 @@ $(document).ready(function () {
         item = jQuery(id);
         if (item.length) return item;
     });
-    
-//    console.log(sectionsBeingScrolled);
 
     $(window).scroll(function() {
         var scrollTop = $(this).scrollTop();
@@ -615,7 +613,7 @@ $(document).ready(function () {
         if (current.length > 1) {
             current = current[current.length-1];
             elementId = '#' + current[current.length-1].id;
-        } else {
+        } else if (scrollTop > $(window).height()/2) {
             elementId = "#about";
         }
         
