@@ -2538,7 +2538,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   display: block;
   position: relative;
   top: -5px;
-  left: -230px;
+  left: -70%;
   
   z-index: 1;
   
