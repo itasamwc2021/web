@@ -38,7 +38,7 @@
 <div class="links-wrapper">
         
         <ul class="links">
-            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#about">About</a></li>
           <li><a href="#location">Location</a></li>
             <li><a href="#keynote">Keynote</a></li>
           <li><a href="#workshops">Workshops</a></li>
@@ -537,8 +537,10 @@ $(document).ready(function () {
         var prefix = jQuery(this).attr("href"),
         id = prefix.substring(prefix.indexOf('#')),
         item = jQuery(id);
-        if (item.length) { return item; }
+        if (item.length) return item;
     });
+    
+//    console.log(sectionsBeingScrolled);
 
     $(window).scroll(function() {
         var scrollTop = $(this).scrollTop();
@@ -553,8 +555,7 @@ $(document).ready(function () {
         // MARK: - Nav Bar Selection
 
         var current = sectionsBeingScrolled.map(function() {
-            if (jQuery(this).offset().top < scrollTop + navBar.outerHeight()+40)
-                return this;
+            if (jQuery(this).offset().top < scrollTop + navBar.outerHeight() + $(window).height()/2) return this;
         })
 
         var elementId = "";
@@ -564,6 +565,8 @@ $(document).ready(function () {
         } else {
             elementId = "#about";
         }
+        
+        console.log(elementId);
 
         sectionLinkItems.map(function() {
             if (jQuery(this).attr("href") != elementId)
