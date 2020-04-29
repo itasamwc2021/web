@@ -591,6 +591,14 @@ $(document).ready(function () {
         if (item.length) return item;
     });
 
+    var targetSection = "";
+    var isHyperScrolling = false;
+    
+    sectionLinkItems.click(function () {
+        targetSection = jQuery(this).attr("href");
+        isHyperScrolling = true;
+    })
+    
     $(window).scroll(function() {
         var scrollTop = $(this).scrollTop();
 
@@ -615,10 +623,11 @@ $(document).ready(function () {
             elementId = "#about";
         }
         
-        console.log(elementId);
-
+        if (isHyperScrolling && elementId == targetSection)
+            isHyperScrolling = false;
+            
         sectionLinkItems.map(function() {
-            if (jQuery(this).attr("href") != elementId)
+            if (isHyperScrolling || jQuery(this).attr("href") != elementId)
                 jQuery(this).removeClass("active");
             else
                 jQuery(this).addClass("active");
