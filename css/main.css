@@ -2473,7 +2473,7 @@ p{
   display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 0px;
-  grid-template-rows: 80px 60px 36vh 0px auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
+  grid-template-rows: 80px 60px 30vh 0px auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
   width: 100vw; 
     
 }
@@ -2755,7 +2755,7 @@ header p{
     color: black;
     border-bottom: 4px solid #ffffff;  
     
-    
+    margin-left: -40px;
     
     
 }
@@ -2776,8 +2776,9 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 3/span 1;
-    padding-top:150px;
+    padding-top:120px;
     padding-left: 40px;
+    
    background: transparent;
     font-family: 'Lora', sans-serif;
     font-size: 30px;
