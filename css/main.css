@@ -2920,7 +2920,7 @@ header p{
     padding-bottom: 5%;
     background: #eeeeee;
     margin: 20px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .0);
     color: #000000;
@@ -3007,7 +3007,8 @@ header p{
     padding: 20px;
     border-radius: 10px;
     text-align: justify;
-    padding-bottom: 15%;
+    
+    height: auto;
     
     
     
