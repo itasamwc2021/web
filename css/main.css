@@ -2540,7 +2540,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   display: block;
   position: relative;
   top: -5px;
-  left: -72%;
+  left: -74%;
   
   z-index: 1;
   
@@ -3007,7 +3007,7 @@ header p{
     padding: 20px;
     border-radius: 10px;
     text-align: justify;
-    padding-bottom: 9%;
+    padding-bottom: 12%;
     
     
     
