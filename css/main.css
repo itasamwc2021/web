@@ -286,7 +286,7 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 1/span 3;
-    background-image: url("../images/desktopgradient3.jpg");
+    background-image: url("../images/desktopgradient.jpg");
     object-fit: cover;
     color: black;
     border-bottom: 4px solid #ffffff;  
