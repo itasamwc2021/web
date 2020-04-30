@@ -286,7 +286,7 @@ header p{
     grid-column: 1/span 6;
     align-items: center;
     grid-row: 1/span 3;
-    background-image: url("../images/sharpened.jpg");
+    background-image: url("../images/desktopgradient3.jpg");
     object-fit: cover;
     color: black;
     border-bottom: 4px solid #ffffff;  
@@ -3031,7 +3031,7 @@ header p{
     height: auto;
     padding-bottom: 2%;
     background: #eeeeee;
-    margin: 20px;
+    margin: 10px;
     margin-bottom: 100px;
     padding: 20px;
     border-radius: 10px;
@@ -3043,8 +3043,8 @@ header p{
     height: auto;
     padding-bottom: 10px;
     background: #eeeeee;
-    margin: 20px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 10px;
     margin-bottom: 20px;
     
